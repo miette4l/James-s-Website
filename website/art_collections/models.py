@@ -6,7 +6,8 @@ class Collection(models.Model):
     platform = models.CharField(max_length=100)
     description = models.TextField()
     link = models.CharField(max_length=100)
-    image = models.FilePathField(path="/website/art_collections/static/img")
+    image = models.FilePathField(path="/Users/holly/code/James/website/art_collections/static/img")
+    # Path must be absolute!
 
 
 class Work(models.Model):
@@ -15,4 +16,4 @@ class Work(models.Model):
     platform = models.CharField(max_length=100)
     description = models.TextField()
     link = models.CharField(max_length=100)
-    image = models.FilePathField(path="/website/art_collections/static/img")
+    image = models.FilePathField(path="/Users/holly/code/James/website/art_collections/static/img")

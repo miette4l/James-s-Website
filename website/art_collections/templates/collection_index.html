@@ -10,14 +10,14 @@
 {% block page_content %}
 <h1>Collections</h1>
 <div class="row">
-{% for collection in collections %}
+{% for collection in art_collections %}
     <div class="col-md-4">
         <div class="card mb-2">
-            <img class="card-img-top" src="{% static project.image %}">
+            <img class="card-img-top" src="{% static collection.image %}">
             <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
-                <a href="{% url 'project_detail' project.pk %}"
+                <h5 class="card-title">{{ collection.title }}</h5>
+                <p class="card-text">{{ collection.description }}</p>
+                <a href="{% url 'collection_detail' collection.pk %}"
                    class="btn btn-primary">
                     Read More
                 </a>
